@@ -1,0 +1,288 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;700&display=swap');
+
+/*==================  Variables del sitio  ==================*/
+:root {
+    /*
+    Margenes y Padding
+    Medidos en rem (1rem = 16px) y llamados segun su medida (0-25 = .25rem, 0-5 = .5rem, etc)
+    */
+
+    --ma-0-25: .25rem;
+    --ma-0-5: .5rem;
+    --ma-0-75: .75rem;
+    --ma-1: 1rem;
+    --ma-1-5: 1.5rem;
+    --ma-2: 2rem;
+    --ma-2-5: 2.5rem;
+    --ma-3: 3rem;
+    --ma-3-5: 3.5rem;
+    --ma-4: 4rem;
+    --ma-4-5: 4.5rem;
+    --ma-5: 5rem;
+
+    --pa-0-25: .25rem;
+    --pa-0-5: .5rem;
+    --pa-0-75: .75rem;
+    --pa-1: 1rem;
+    --pa-1-5: 1.5rem;
+    --pa-2: 2rem;
+    --pa-2-5: 2.5rem;
+    --pa-3: 3rem;
+    --pa-3-5: 3.5rem;
+    --pa-4: 4rem;
+    --pa-4-5: 4.5rem;
+    --pa-5: 5rem;
+
+    /* Grosor de la fuente */
+    --font-normal: 200;
+    --font-medium: 400;
+    --font-semi-bold: 600;
+    --font-bold: 700;
+}
+
+/*==================  CSS Base  ==================*/
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #66717E;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*==================  Clases CSS  ==================*/
+
+.container{
+    padding: var(--pa-2) var(--pa-5);
+    color:#fff;
+}
+
+.clima-actual{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.clima-hoy {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    font-size: 1.5rem;
+    font-weight: var(--font-medium);
+}
+
+.clima-info {
+    display: flex;
+	text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    font-weight: var(--font-medium);
+}
+
+
+#dia {
+    font-size: 3rem;
+    font-weight: var(--font-semi-bold);
+}
+
+#temp_actual {
+    font-size: 4rem;
+    font-weight: var(--font-bold);
+}
+
+#estado_actual {
+    font-size: 1.5rem;
+    font-weight: var(--font-medium);
+}
+
+
+.shadow {
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+}
+
+.texto-clima {
+    background-color: #333;
+    font-weight: bold;
+    border-radius: 1rem;
+    width: auto;
+    height: auto;
+    padding: var(--pa-0-5) var(--pa-1) var(--pa-0-5) var(--pa-1);
+    font-weight: var(--font-medium);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+}
+
+.espacio {
+    display: flex;
+    justify-content: space-between;
+    margin-top: var(--ma-1);
+    text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+}
+
+.clima-info-lugar {
+    margin-top: var(--ma-2);
+    background-color: #333;
+    font-weight: bold;
+    border-radius: 1rem;
+    width: auto;
+    height: auto;
+    padding: var(--pa-0-5) var(--pa-2) var(--pa-0-5) var(--pa-2);
+    font-weight: var(--font-normal);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+.clima-info-hoy {
+    display: flex;
+    flex-direction: column;
+    font-weight: var(--font-semi-bold);
+    font-size: 1.5rem;
+    color: #fff;
+    line-height: 3rem;
+}
+
+.clima-semana{
+    background: rgba(24,24,27,0.8);
+    padding: var(--pa-1-5);
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    color:white;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    overflow-y: hidden;
+}
+
+.clima-semana .hoy{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    padding: var(--pa-1);
+    padding-right: var(--pa-2-5);
+    margin-right: var(--ma-1);
+    background: #212121;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.clima-semana .hoy .pronostico-dia{
+    padding: var(--pa-0-5) var(--pa-1);
+    background: #3c3c44;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.clima-semana .hoy .temp{
+    font-size: 1.5rem;
+    padding-top: var(--pa-1);
+}
+
+.clima-semana .pronostico{
+    display: flex;
+}
+
+.pronostico .pronostico-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 var(--ma-1);
+    padding: var(--pa-1);
+    border-radius: 1rem;
+    background: #212121;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.pronostico .pronostico-item .pronostico-dia{
+    padding: var(--pa-0-5) var(--pa-0-75);
+    background: #3C3C44;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.pronostico .pronostico-item .temp{
+    font-weight: var(--font-normal);
+    font-size: 1rem;
+}
+
+.boton-movil {
+    display: none;
+    position: fixed;
+    width: 3rem;
+    top: .5rem;
+    right: .5rem;
+    background-color: rgba(24,24,27,0.8);
+    color: #fff;
+    padding: var(--pa-1);
+    border-radius: .5rem;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: var(--font-semi-bold);
+
+}
+
+.boton-movil:active {
+    background-color: #eb6e4b;
+}
+
+/*==================  Media Queries  ==================*/
+
+@media only screen and  (max-width:650px){
+
+    .ocultar {
+        display: none;
+    }
+
+    .boton-movil {
+        display: block;
+    }
+
+    .container{
+        padding: var(--pa-0-5);
+        font-size: 1rem;
+    }
+
+    .clima-hoy {
+        margin-bottom: var(--ma-3);
+    }
+    
+    .clima-semana{
+        justify-content: start;
+        align-items: none;
+        overflow-y: scroll;
+    }
+
+    .clima-semana .hoy .temp{
+        font-size: 1rem;
+    }
+
+}
+
+@media only screen and  (max-width:767px){
+    
+    .container{
+        padding: var(--pa-1-5);
+    }
+    
+    .clima-semana{
+        justify-content: start;
+        align-items: none;
+        overflow-y: scroll;
+    }
+
+    .clima-semana .hoy .temp{
+        font-size: 1rem;
+    }
+
+}
+
+@media only screen and (max-width: 1400px){
+    .clima-semana{
+        justify-content: start;
+        align-items: none;
+        overflow-x: scroll;
+    }
+}

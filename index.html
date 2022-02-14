@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon del sitio -->
+    <link rel='shortcut icon' type='image/x-icon' href='img/clima.ico' />
+    <!-- CSS Principal -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Iconos Unicons -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <title>El clima - Michel</title>
+</head>
+<body>
+    <main>
+        <!-- El clima de hoy -->
+        <section>
+            <div class="container">
+                <div class="clima-actual">
+                    <!-- Fecha y temperatura -->
+                    <div class="clima-hoy">
+                        <h2 id="dia" class="clima-fecha-dia shadow"></h2>
+                        <span id="hora" class="clima-fecha-hora shadow"></span>
+                        <span id="fecha" class="clima-fecha-numero shadow"></span>
+                        <span id="ciudad" class="clima-fecha-lugar shadow"></span>
+                        <span id="clima-icono"></span>
+                        <h1 id="temp_actual" class="clima-temperatura-numero shadow"></h1>
+                        <h3 id="estado_actual" class="clima-temperatura-descripcion shadow"></h3>
+                    </div>
+                    <!-- /Fecha y temperatura -->
+
+                    <!-- Datos extra del clima -->
+                    <div class="clima-info">
+                        <div class="clima-info-hoy">
+                            <div class="clima-info-sensacion espacio">
+                                <span><i class="uil uil-temperature-minus"></i> Sensación</span>
+                                <span id="sensacion"></span>
+                            </div>
+                            <div class="clima-info-humedad espacio">
+                                <span><i class="uil uil-water"></i> Humedad</span>
+                                <span id="humedad"></span>
+                            </div>
+                            <div class="clima-info-viento espacio">
+                                <span><i class="uil uil-wind"></i> Viento</span>
+                                <span id="viento"></span>
+                            </div>
+                            <div class="clima-info-presion espacio">
+                                <span><i class="uil uil-compress-arrows"></i> Presión</span>
+                                <span id="presion"></span>
+                            </div>
+                            <div class="clima-info-rocio espacio">
+                                <span><i class="uil uil-tear"></i> Punto de rocio</span>
+                                <span id="rocio"></span>
+                            </div>
+                            <div class="clima-info-visibilidad espacio">
+                                <span><i class="uil uil-eye"></i> Visibilidad</span>
+                                <span id="visibilidad"></span>
+                            </div>
+                            <br>
+                            <div id="texto_geo" class="clima-info-lugar">
+                                <span>Permitenos saber tu localización</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /Datos extra del clima -->
+                </div>
+            </div>
+        </section>
+        <!-- /El clima de hoy -->
+
+        <!-- El clima de la semana -->
+        <section>
+            <span id="boton_movil" class="boton-movil">
+                <i class="uil uil-calendar-alt"></i>
+            </span>
+            <div class="clima-semana ocultar" id="clima_actual">
+                <div class="hoy" id="temp_hoy">
+                    <img src="http://openweathermap.org/img/wn/13d@4x.png" alt="icono clima">
+                    <div class="other">
+                        <div class="day"></div>
+                        <div class="temp"></div>
+                        <div class="temp"></div>
+                    </div>
+                </div>
+
+                <div class="pronostico" id="pronostico_clima">
+                    <div class="pronostico-item">
+                        <div class="pronostico-dia"></div>
+                        <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="icono clima">
+                        <div class="temp"></div>
+                        <div class="temp"></div>
+                    </div>
+                    <div class="pronostico-item">
+                        <div class="pronostico-dia"></div>
+                        <img src="http://openweathermap.org/img/wn/01d@2x.png" alt="icono clima">
+                        <div class="temp"></div>
+                        <div class="temp"></div>
+                    </div>
+                    <div class="pronostico-item">
+                        <div class="pronostico-dia"></div>
+                        <img src="http://openweathermap.org/img/wn/09d@2x.png" alt="icono clima">
+                        <div class="temp"></div>
+                        <div class="temp"></div>
+                    </div>
+                    <div class="pronostico-item">
+                        <div class="pronostico-dia"></div>
+                        <img src="http://openweathermap.org/img/wn/03d@2x.png" alt="icono clima">
+                        <div class="temp"></div>
+                        <div class="temp"></div>
+                    </div>
+                    <div class="pronostico-item">
+                        <div class="pronostico-dia"></div>
+                        <img src="http://openweathermap.org/img/wn/11d@2x.png" alt="icono clima">
+                        <div class="temp"></div>
+                        <div class="temp"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /El clima de la semana -->
+    </main>
+    <!-- JS Principal -->
+    <script src="js/main.js"></script>
+</body>
+</html>
