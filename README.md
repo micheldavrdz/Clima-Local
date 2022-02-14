@@ -41,7 +41,7 @@ Estas instrucciones le darán una copia del proyecto en su máquina local lista 
 
 ### Prerequisitos
 
-Para que el proyecto sea funcional es necesario contar una API KEY (llave API) de OpenWeatherMap, para la cual es necesario crear una cuenta.
+Para que el proyecto sea funcional es necesario contar con una API KEY (llave API) de OpenWeatherMap, para la cual es necesario crear una cuenta.
 - [OpenWeatherMap](https://openweathermap.org)
 - [Docs de la API](https://openweathermap.org/api/one-call-api)
 
